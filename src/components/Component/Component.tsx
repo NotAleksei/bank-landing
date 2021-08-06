@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {IComponent} from './ITicketCard'
+import {IComponent} from './IComponent'
 import './TicketCard.css';
 
 const Component: React.FC<IComponent> = (props) => {
