@@ -2,27 +2,44 @@
     width: 100%;
     height: 90px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    box-sizing: border-box;
+    background-color: #F6F7FF;
 
     &__logo {
         display: flex;
         align-items: baseline;
-        height: 25px;
         
         &_img {
             height: 25px;
         }
 
         &_label {
+            margin-left: 8px;
             font-style: normal;
             font-weight: bold;
             font-size: 20px;
+            line-height: 39px;
             color: #1F1E25;
         }
+    }
 
-        &_tab-buttons {
-            display: flex;
-            justify-content: space-between;
-            width: 420px;
+    &__tab-buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+    }
+
+    &__login {
+        display: flex;
+        align-items: center;
+        height: 25px;
+        cursor: pointer;
+
+        &_label {
+            margin-left: 10px;
         }
     }
 }
