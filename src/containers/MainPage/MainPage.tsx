@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../Header/Header';
-import './MainContainer.css';
+import Carousel from '../Carousel/Carousel';
+import './MainPage.css';
 
-const MainContainer: React.FC = () => {
+const MainPage: React.FC = () => {
   return (
     <div className=''>
       <Header/>
+      <Carousel/>
     </div>
   );
 }
 
-export default MainContainer;
+export default MainPage;
