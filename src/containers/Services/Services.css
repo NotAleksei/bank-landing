@@ -1,0 +1,54 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 85%;
+  min-width: 1160px;
+  margin-top: 60px;
+}
+.services__tabs-container {
+  display: flex;
+  width: 100%;
+  height: 90px;
+}
+.services__tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 55px 90px;
+  box-sizing: border-box;
+  background-color: #F6F7FF;
+}
+.services__tab-wrapper {
+  width: 500px;
+}
+.services__tab_title {
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  white-space: pre-wrap;
+}
+.services__tab_checkbox {
+  display: flex;
+  align-items: baseline;
+  padding-top: 25px;
+}
+.services__tab_checkbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.services__tab_checkbox-label {
+  font-size: 18px;
+  margin-left: 10px;
+  white-space: pre-wrap;
+}
+.services__tab_additional {
+  white-space: pre-wrap;
+  font-size: 18px;
+}
+.services__tab_img {
+  width: 440px;
+  height: 290px;
+  margin-right: 10%;
+}
