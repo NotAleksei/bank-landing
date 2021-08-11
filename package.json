@@ -2,7 +2,7 @@
   "name": "bank-landing",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://NotAleksei.github.io/bank_landing/",
+  "homepage": "https://NotAleksei.github.io/bank-landing/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
