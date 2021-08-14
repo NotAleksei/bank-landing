@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import vault from '../../img/icon/vault.svg';
 import cards from '../../img/icon/cards.svg';
 import security from '../../img/icon/security.svg';
@@ -77,7 +77,7 @@ const Services: React.FC = () => {
                 {configChecboxes(tab.checkText)}
               </div>
               {tab.additionalInfo && <span className="services__tab_additional">{tab.additionalInfo}</span>}
-              {tab.bttnCaption && <Button caption={tab.bttnCaption} color="dark" size="m" onClick={(event) => handleClick(event)}/>}
+              {tab.bttnCaption && <Button caption={tab.bttnCaption} color="dark" size="m" onClick={handleClick}/>}
             </div>
             <img className="services__tab_img" src={tab.tabImg} alt=""></img>
           </div>

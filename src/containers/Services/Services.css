@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   align-self: center;
-  width: 85%;
-  min-width: 1160px;
+  width: 1160px;
   margin-top: 60px;
 }
 .services__tabs-container {
@@ -50,5 +49,4 @@
 .services__tab_img {
   width: 440px;
   height: 290px;
-  margin-right: 10%;
 }

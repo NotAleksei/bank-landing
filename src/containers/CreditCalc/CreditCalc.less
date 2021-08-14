@@ -1,0 +1,120 @@
+.credit-calc {
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 104px;
+    margin-bottom: 300px;
+    align-self: center;
+
+    &__label {
+        margin-top: 0;
+        margin-bottom: 58px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left-col {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__right-col {
+        width: 500px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 60px;
+        box-sizing: border-box;
+        background: #F6F7FF;
+    }
+
+    &__step {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    &__input-block {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        width: 100%;
+        padding: 0 25px;
+        box-sizing: border-box;
+
+        &_border {
+            border: 1px solid #1F1E25;
+            border-radius: 4px;
+        }
+    }
+
+    &__selector {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        font-size: 16px;
+        cursor: pointer;
+        user-select: none;
+        margin-top: 25px;
+        margin-bottom: 35px;
+
+        &_choosen {
+            justify-content: space-between;
+            border: 1px solid #1F1E25;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+        
+        &_expanded {
+            border-radius: 4px 4px 0px 0px;
+        }
+    }
+
+    &__drop-down {
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #1F1E25;
+        border-top: none;
+        border-radius: 0px 0px 4px 4px;
+        box-sizing: border-box;
+
+        &_element {
+            font-weight: 400;
+
+            &:last-child {
+                border-top: 1px solid #C1C2CA;
+            }
+        }
+    }
+
+    &__offer {
+        &_info {
+            display: flex;
+            justify-content: space-between;
+
+            &>div {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                height: 45px;
+            }
+
+            &>div:last-child {
+                width: 157px
+            }
+        }
+
+        &_value {
+            width: 190px;
+            font-weight: 600;
+            font-size: 22px;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.credit-calc {
+  width: 1170px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 104px;
+  margin-bottom: 300px;
+  align-self: center;
+}
+.credit-calc__label {
+  margin-top: 0;
+  margin-bottom: 58px;
+}
+.credit-calc__container {
+  display: flex;
+  justify-content: space-between;
+}
+.credit-calc__left-col {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.credit-calc__right-col {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px;
+  box-sizing: border-box;
+  background: #F6F7FF;
+}
+.credit-calc__step {
+  font-size: 22px;
+  margin: 0;
+}
+.credit-calc__input-block {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+.credit-calc__input-block_border {
+  border: 1px solid #1F1E25;
+  border-radius: 4px;
+}
+.credit-calc__selector {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+.credit-calc__selector_choosen {
+  justify-content: space-between;
+  border: 1px solid #1F1E25;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.credit-calc__selector_expanded {
+  border-radius: 4px 4px 0px 0px;
+}
+.credit-calc__drop-down {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #1F1E25;
+  border-top: none;
+  border-radius: 0px 0px 4px 4px;
+  box-sizing: border-box;
+}
+.credit-calc__drop-down_element {
+  font-weight: 400;
+}
+.credit-calc__drop-down_element:last-child {
+  border-top: 1px solid #C1C2CA;
+}
+.credit-calc__offer_info {
+  display: flex;
+  justify-content: space-between;
+}
+.credit-calc__offer_info > div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 45px;
+}
+.credit-calc__offer_info > div:last-child {
+  width: 157px;
+}
+.credit-calc__offer_value {
+  width: 190px;
+  font-weight: 600;
+  font-size: 22px;
+}

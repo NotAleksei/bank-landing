@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 import Carousel from '../Carousel/Carousel';
 import './MainPage.css';
 import Services from '../Services/Services';
+import CreditCalc from '../CreditCalc/CreditCalc';
 
 const MainPage: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const MainPage: React.FC = () => {
       <Header/>
       <Carousel/>
       <Services/>
+      <CreditCalc/>
     </div>
   );
 }
