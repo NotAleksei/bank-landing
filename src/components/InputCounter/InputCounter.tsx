@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import plus from '../../img/icon/plus.svg';
 import minus from '../../img/icon/minus.svg';
 import './InputCounter.css';
@@ -12,13 +12,9 @@ const InputCounter: React.FC<IInputCounter> = (props) => {
   const { inputValue, onValueChanged } = props;
   const [currentInputValue, setCurrentInputValue] = useState(inputValue);
 
-  function increaseInput(): void {
-    setCurrentInputValue(+currentInputValue + props.step);
-  }
-
-  function decreaseInput(): void {
-    setCurrentInputValue(+currentInputValue - props.step);
-  }
+  useEffect(() => {
+    setCurrentInputValue(inputValue)
+  }, [inputValue]);
 
   function changeBttnHandler(type?: string): void {
     const value = type === 'increase'
