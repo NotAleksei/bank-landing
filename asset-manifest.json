@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/bank-landing/static/css/main.39756c39.chunk.css",
-    "main.js": "/bank-landing/static/js/main.5d433d9b.chunk.js",
-    "main.js.map": "/bank-landing/static/js/main.5d433d9b.chunk.js.map",
+    "main.css": "/bank-landing/static/css/main.b37ba56d.chunk.css",
+    "main.js": "/bank-landing/static/js/main.02fc8514.chunk.js",
+    "main.js.map": "/bank-landing/static/js/main.02fc8514.chunk.js.map",
     "runtime-main.js": "/bank-landing/static/js/runtime-main.b3cdb5bf.js",
     "runtime-main.js.map": "/bank-landing/static/js/runtime-main.b3cdb5bf.js.map",
     "static/js/2.40100ae2.chunk.js": "/bank-landing/static/js/2.40100ae2.chunk.js",
     "static/js/2.40100ae2.chunk.js.map": "/bank-landing/static/js/2.40100ae2.chunk.js.map",
     "index.html": "/bank-landing/index.html",
-    "static/css/main.39756c39.chunk.css.map": "/bank-landing/static/css/main.39756c39.chunk.css.map",
+    "static/css/main.b37ba56d.chunk.css.map": "/bank-landing/static/css/main.b37ba56d.chunk.css.map",
     "static/js/2.40100ae2.chunk.js.LICENSE.txt": "/bank-landing/static/js/2.40100ae2.chunk.js.LICENSE.txt",
     "static/media/alice.6ff36ea8.png": "/bank-landing/static/media/alice.6ff36ea8.png",
     "static/media/arrow_down.4c5bbd21.svg": "/bank-landing/static/media/arrow_down.4c5bbd21.svg",
@@ -17,6 +17,9 @@
     "static/media/car.f669381a.png": "/bank-landing/static/media/car.f669381a.png",
     "static/media/cards.86419587.svg": "/bank-landing/static/media/cards.86419587.svg",
     "static/media/checkbox.37c8108b.svg": "/bank-landing/static/media/checkbox.37c8108b.svg",
+    "static/media/facebook.08f5b8a9.svg": "/bank-landing/static/media/facebook.08f5b8a9.svg",
+    "static/media/handset.9fd53784.svg": "/bank-landing/static/media/handset.9fd53784.svg",
+    "static/media/instagram.2f285d61.svg": "/bank-landing/static/media/instagram.2f285d61.svg",
     "static/media/location.9f6b9e0c.svg": "/bank-landing/static/media/location.9f6b9e0c.svg",
     "static/media/lock.27e4672a.png": "/bank-landing/static/media/lock.27e4672a.png",
     "static/media/login.877a13e5.svg": "/bank-landing/static/media/login.877a13e5.svg",
@@ -26,16 +29,19 @@
     "static/media/phone.a0fb8f66.svg": "/bank-landing/static/media/phone.a0fb8f66.svg",
     "static/media/piggybank.b27a3374.png": "/bank-landing/static/media/piggybank.b27a3374.png",
     "static/media/plus.352dca6a.svg": "/bank-landing/static/media/plus.352dca6a.svg",
+    "static/media/s_phone.4d4c8c64.svg": "/bank-landing/static/media/s_phone.4d4c8c64.svg",
     "static/media/security.37bbd855.svg": "/bank-landing/static/media/security.37bbd855.svg",
     "static/media/slide_1.2a8d2a29.png": "/bank-landing/static/media/slide_1.2a8d2a29.png",
     "static/media/slide_2.b30daf43.png": "/bank-landing/static/media/slide_2.b30daf43.png",
+    "static/media/twitter.a9dbc3b2.svg": "/bank-landing/static/media/twitter.a9dbc3b2.svg",
     "static/media/vault.eebb8ad5.svg": "/bank-landing/static/media/vault.eebb8ad5.svg",
-    "static/media/whiteCard.c5f47c0b.png": "/bank-landing/static/media/whiteCard.c5f47c0b.png"
+    "static/media/whiteCard.c5f47c0b.png": "/bank-landing/static/media/whiteCard.c5f47c0b.png",
+    "static/media/youtube.990fb51a.svg": "/bank-landing/static/media/youtube.990fb51a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.b3cdb5bf.js",
     "static/js/2.40100ae2.chunk.js",
-    "static/css/main.39756c39.chunk.css",
-    "static/js/main.5d433d9b.chunk.js"
+    "static/css/main.b37ba56d.chunk.css",
+    "static/js/main.02fc8514.chunk.js"
   ]
 }
