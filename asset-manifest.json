@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/bank-landing/static/css/main.927cc912.chunk.css",
-    "main.js": "/bank-landing/static/js/main.0804108c.chunk.js",
-    "main.js.map": "/bank-landing/static/js/main.0804108c.chunk.js.map",
+    "main.css": "/bank-landing/static/css/main.39756c39.chunk.css",
+    "main.js": "/bank-landing/static/js/main.5d433d9b.chunk.js",
+    "main.js.map": "/bank-landing/static/js/main.5d433d9b.chunk.js.map",
     "runtime-main.js": "/bank-landing/static/js/runtime-main.b3cdb5bf.js",
     "runtime-main.js.map": "/bank-landing/static/js/runtime-main.b3cdb5bf.js.map",
-    "static/js/2.fc34c37f.chunk.js": "/bank-landing/static/js/2.fc34c37f.chunk.js",
-    "static/js/2.fc34c37f.chunk.js.map": "/bank-landing/static/js/2.fc34c37f.chunk.js.map",
+    "static/js/2.40100ae2.chunk.js": "/bank-landing/static/js/2.40100ae2.chunk.js",
+    "static/js/2.40100ae2.chunk.js.map": "/bank-landing/static/js/2.40100ae2.chunk.js.map",
     "index.html": "/bank-landing/index.html",
-    "static/css/main.927cc912.chunk.css.map": "/bank-landing/static/css/main.927cc912.chunk.css.map",
-    "static/js/2.fc34c37f.chunk.js.LICENSE.txt": "/bank-landing/static/js/2.fc34c37f.chunk.js.LICENSE.txt",
+    "static/css/main.39756c39.chunk.css.map": "/bank-landing/static/css/main.39756c39.chunk.css.map",
+    "static/js/2.40100ae2.chunk.js.LICENSE.txt": "/bank-landing/static/js/2.40100ae2.chunk.js.LICENSE.txt",
     "static/media/alice.6ff36ea8.png": "/bank-landing/static/media/alice.6ff36ea8.png",
     "static/media/arrow_down.4c5bbd21.svg": "/bank-landing/static/media/arrow_down.4c5bbd21.svg",
     "static/media/arrow_up.da84f14a.svg": "/bank-landing/static/media/arrow_up.da84f14a.svg",
@@ -17,6 +17,7 @@
     "static/media/car.f669381a.png": "/bank-landing/static/media/car.f669381a.png",
     "static/media/cards.86419587.svg": "/bank-landing/static/media/cards.86419587.svg",
     "static/media/checkbox.37c8108b.svg": "/bank-landing/static/media/checkbox.37c8108b.svg",
+    "static/media/location.9f6b9e0c.svg": "/bank-landing/static/media/location.9f6b9e0c.svg",
     "static/media/lock.27e4672a.png": "/bank-landing/static/media/lock.27e4672a.png",
     "static/media/login.877a13e5.svg": "/bank-landing/static/media/login.877a13e5.svg",
     "static/media/logo.78c0c010.svg": "/bank-landing/static/media/logo.78c0c010.svg",
@@ -33,8 +34,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b3cdb5bf.js",
-    "static/js/2.fc34c37f.chunk.js",
-    "static/css/main.927cc912.chunk.css",
-    "static/js/main.0804108c.chunk.js"
+    "static/js/2.40100ae2.chunk.js",
+    "static/css/main.39756c39.chunk.css",
+    "static/js/main.5d433d9b.chunk.js"
   ]
 }
