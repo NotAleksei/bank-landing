@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import './MainPage.css';
 import Header from '../Header/Header';
 import Carousel from '../Carousel/Carousel';
-import './MainPage.css';
 import Services from '../Services/Services';
 import CreditCalc from '../CreditCalc/CreditCalc';
+import OfficesMap from '../OfficesMap/OfficesMap';
 
 const MainPage: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const MainPage: React.FC = () => {
       <Carousel/>
       <Services/>
       <CreditCalc/>
+      <OfficesMap/>
     </div>
   );
 }

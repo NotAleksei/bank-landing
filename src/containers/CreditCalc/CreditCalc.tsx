@@ -84,53 +84,56 @@ const CreditCalc: React.FC = () => {
               </div>
             }
           </div>
-          <h2 className="credit-calc__step">Шаг 2. Введите параметры кредита</h2>
-          <InputCounter
-            label="Стоимость недвижимости"
-            inputValue={creditValue}
-            isShowChangeButtons={true}
-            step={10000}
-            minValue={1200000}
-            maxValue={25000000}
-            additionalText="От 1 200 000  до 25 000 000 рублей"
-            onValueChanged={updateCreditValue}
-          />
-          <InputCounter
-            label="Первоначальный взнос"
-            inputValue={firstPay}
-            isShowChangeButtons={false}
-            step={1}
-            onValueChanged={updatePercentValue}
-          />
-          <Slider
-            thumbValue={firstPayPercent}
-            minValue={10}
-            maxValue={100}
-            step={1}
-            sliderLabel="%"
-            showRightLabel={false}
-            onSliderChanged={updateFirstPay}
-          />
-          <InputCounter
-            label="Срок кредитования"
-            inputValue={creditPeriod}
-            isShowChangeButtons={false}
-            step={1}
-            minValue={5}
-            maxValue={30}
-            onValueChanged={setCreditPeriod}
-          />
-          <Slider
-            thumbValue={creditPeriod}
-            minValue={5}
-            maxValue={30}
-            step={1}
-            sliderLabel="лет"
-            showRightLabel={true}
-            onSliderChanged={setCreditPeriod}
-          />
+          {selectedCalc !== 'default' && <div>
+            <h2 className="credit-calc__step">Шаг 2. Введите параметры кредита</h2>
+            <InputCounter
+              label="Стоимость недвижимости"
+              inputValue={creditValue}
+              isShowChangeButtons={true}
+              step={10000}
+              minValue={1200000}
+              maxValue={25000000}
+              additionalText="От 1 200 000  до 25 000 000 рублей"
+              onValueChanged={updateCreditValue}
+            />
+            <InputCounter
+              label="Первоначальный взнос"
+              inputValue={firstPay}
+              maxValue={creditValue}
+              isShowChangeButtons={false}
+              step={1}
+              onValueChanged={updatePercentValue}
+            />
+            <Slider
+              thumbValue={firstPayPercent}
+              minValue={10}
+              maxValue={100}
+              step={1}
+              sliderLabel="%"
+              showRightLabel={false}
+              onSliderChanged={updateFirstPay}
+            />
+            <InputCounter
+              label="Срок кредитования"
+              inputValue={creditPeriod}
+              isShowChangeButtons={false}
+              step={1}
+              minValue={5}
+              maxValue={30}
+              onValueChanged={setCreditPeriod}
+            />
+            <Slider
+              thumbValue={creditPeriod}
+              minValue={5}
+              maxValue={30}
+              step={1}
+              sliderLabel="лет"
+              showRightLabel={true}
+              onSliderChanged={setCreditPeriod}
+            />
+          </div>}
         </div>
-        <div className="credit-calc__right-col">
+        {selectedCalc !== 'default' && <div className="credit-calc__right-col">
           <h2 className="credit-calc__step">Наше предложение</h2>
           <div className="credit-calc__offer_info">
             <div>
@@ -153,7 +156,7 @@ const CreditCalc: React.FC = () => {
             </div>
           </div>
           <Button caption="Оформить заявку" color="dark" size="m" onClick={handleClick}/>
-        </div>
+        </div>}
       </div>
     </div>
   );
