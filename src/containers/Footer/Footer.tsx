@@ -11,11 +11,11 @@ import youtube from '../../img/icon/youtube.svg'
 const Footer: React.FC = () => {
   return (
     <footer>
-      <div className="footer__wrapper">
+      <div className="footer__info-block">
         <div>
           <div className="footer__logo">
-            <img className="footer__logo_img" src={logo} alt=""/>
-            <div className="footer__logo_label">ЛИГА Банк</div>
+            <img className="footer__logo-img" src={logo} alt=""/>
+            <div className="footer__logo-label">ЛИГА Банк</div>
           </div>
           <p>
             150015, г. Москва, ул. Московская, д. 32<br/>
@@ -30,16 +30,16 @@ const Footer: React.FC = () => {
           <span>Задать вопрос</span>
         </div>
         <div className="footer__contacts">
-          <img className="footer__contacts_phone" src={phone} alt=""/>
+          <img className="footer__phone" src={phone} alt=""/>
           <div>
-            <span className="footer__contacts_number">*0904</span>
+            <span className="footer__number">*0904</span>
             <p>Бесплатно для абонентов МТС,<br/>Билайн, Мегафон, Теле2</p>
           </div>
         </div>
         <div className="footer__contacts">
-          <img className="footer__contacts_phone" src={handset} alt=""/>
+          <img className="footer__phone" src={handset} alt=""/>
           <div>
-            <span className="footer__contacts_number">8 800 111 22 33</span>
+            <span className="footer__number">8 800 111 22 33</span>
             <p>Бесплатный для всех<br/>городов России</p>
           </div>
         </div>

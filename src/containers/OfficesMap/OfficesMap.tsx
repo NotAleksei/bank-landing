@@ -4,11 +4,11 @@ import { YMaps, Map, Placemark } from 'react-yandex-maps'
 import location from '../../img/icon/location.svg';
 
 const PIN_COORDINATES = [
-  [55.75,37.35],
-  [51.55,45.74],
-  [55.80,48.81],
-  [57.17,65.24],
-  [55,73.10]
+  [55.75,37.61],
+  [51.54,46.03],
+  [55.80,49.1],
+  [57.16,65.54],
+  [55,73.36]
 ]
 
 const OfficesMap: React.FC = () => {
@@ -16,13 +16,14 @@ const OfficesMap: React.FC = () => {
   function createPlacemarks(): JSX.Element[] {
     return PIN_COORDINATES.map(coordinates => {
       return <Placemark
-                geometry={coordinates}
-                options={{
-                  iconLayout: 'default#image',
-                  iconImageHref: location,
-                  iconImageSize: [35, 40],
-                }}
-              />
+        geometry={coordinates}
+        options={{
+          iconLayout: 'default#image',
+          iconImageHref: location,
+          iconImageOffset: [-17, -38],
+          iconImageSize: [35, 40],
+        }}
+      />
     })
   }
 

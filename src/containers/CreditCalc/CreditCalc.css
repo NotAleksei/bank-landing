@@ -9,7 +9,7 @@
   margin-top: 0;
   margin-bottom: 58px;
 }
-.credit-calc__container {
+.credit-calc__steps {
   display: flex;
   justify-content: space-between;
 }
@@ -64,22 +64,6 @@
 .credit-calc__selector_expanded {
   border-radius: 4px 4px 0px 0px;
 }
-.credit-calc__drop-down {
-  position: absolute;
-  top: 60px;
-  width: 100%;
-  background-color: #fff;
-  border: 1px solid #1F1E25;
-  border-top: none;
-  border-radius: 0px 0px 4px 4px;
-  box-sizing: border-box;
-}
-.credit-calc__drop-down_element {
-  font-weight: 400;
-}
-.credit-calc__drop-down_element:last-child {
-  border-top: 1px solid #C1C2CA;
-}
 .credit-calc__offer_info {
   display: flex;
   justify-content: space-between;
@@ -97,4 +81,20 @@
   width: 190px;
   font-weight: 600;
   font-size: 22px;
+}
+.drop-down {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #1F1E25;
+  border-top: none;
+  border-radius: 0px 0px 4px 4px;
+  box-sizing: border-box;
+}
+.drop-down__element {
+  font-weight: 400;
+}
+.drop-down__element:last-child {
+  border-top: 1px solid #C1C2CA;
 }

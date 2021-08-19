@@ -10,7 +10,7 @@
         margin-bottom: 58px;
     }
 
-    &__container {
+    &__steps {
         display: flex;
         justify-content: space-between;
     }
@@ -74,25 +74,6 @@
         }
     }
 
-    &__drop-down {
-        position: absolute;
-        top: 60px;
-        width: 100%;
-        background-color: #fff;
-        border: 1px solid #1F1E25;
-        border-top: none;
-        border-radius: 0px 0px 4px 4px;
-        box-sizing: border-box;
-
-        &_element {
-            font-weight: 400;
-
-            &:last-child {
-                border-top: 1px solid #C1C2CA;
-            }
-        }
-    }
-
     &__offer {
         &_info {
             display: flex;
@@ -114,6 +95,25 @@
             width: 190px;
             font-weight: 600;
             font-size: 22px;
+        }
+    }
+}
+
+.drop-down {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #1F1E25;
+    border-top: none;
+    border-radius: 0px 0px 4px 4px;
+    box-sizing: border-box;
+
+    &__element {
+        font-weight: 400;
+
+        &:last-child {
+            border-top: 1px solid #C1C2CA;
         }
     }
 }

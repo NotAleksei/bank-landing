@@ -5,7 +5,7 @@ import { IButton } from './IButton'
 const Button: React.FC<IButton> = (props) => {
 
   return (
-    <a className={`button button__color_${props.color} button__size_${props.size}`} href="#" onClick={(ev) => props.onClick(ev)}>
+    <a className={`button button_${props.color} button_${props.size}`} href="#" onClick={props.onClick}>
       <span>{props.caption}</span>
     </a>
   );

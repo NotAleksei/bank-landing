@@ -4,9 +4,6 @@ import minus from '../../img/icon/minus.svg';
 import './InputCounter.css';
 import { IInputCounter } from './IInputCounter'
 
-// const MIN_MORTGAGE = 1200000;
-// const MAX_MORTGAGE = 25000000;
-
 const InputCounter: React.FC<IInputCounter> = (props) => {
 
   const { inputValue, onValueChanged } = props;
@@ -20,6 +17,7 @@ const InputCounter: React.FC<IInputCounter> = (props) => {
     const value = type === 'increase'
       ? +currentInputValue + props.step
       : +currentInputValue - props.step;
+
       if ((props.minValue && value < props.minValue) || (props.maxValue && value > props.maxValue)) {
         return;
       }
@@ -44,14 +42,6 @@ const InputCounter: React.FC<IInputCounter> = (props) => {
     }
     onValueChanged(currentInputValue);
   }
-
-  // function validateInput(): void {
-  //     if (inputValue <= MIN_MORTGAGE || inputValue >= MAX_MORTGAGE) {
-  //       setIsValid(false);
-  //     } else {
-  //       setIsValid(true);
-  //     }
-  // }
 
   return (
     <div className="input-counter">

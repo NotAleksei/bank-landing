@@ -10,19 +10,19 @@ const Header: React.FC = () => {
   const tabsBtn = tabsBtnCaptions.map(caption => <TabsButton caption={ caption }/>)
 
   return (
-    <div className="header">
+    <header className="header">
       <div className="header__logo">
-        <img className="header__logo_img" src={logo} alt=""/>
-        <div className="header__logo_label">ЛИГА Банк</div>
+        <img className="header__logo-img" src={logo} alt=""/>
+        <div className="header__logo-label">ЛИГА Банк</div>
       </div>
       <div className="header__tab-buttons">
-          {tabsBtn}
+        {tabsBtn}
       </div>
       <div className="header__login">
-        <img className="header__login_img" src={login} alt=""/>
+        <img className="header__login-img" src={login} alt=""/>
         <div className="header__login_label">Войти в интернет банк</div>
       </div>
-    </div>
+    </header>
   );
 }
 

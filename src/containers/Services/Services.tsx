@@ -58,9 +58,9 @@ const Services: React.FC = () => {
 
   function configChecboxes(checkText: string[]): JSX.Element[] {
     return checkText.map(text => {
-      return <div className="services__tab_checkbox">
+      return <div className="services__checkbox">
           <img src={checkbox} alt=""></img>
-          <span className="services__tab_checkbox-label">{text}</span>
+          <span className="services__checkbox-label">{text}</span>
         </div>
     })
   }
@@ -68,18 +68,18 @@ const Services: React.FC = () => {
   
   function setTab(activeTab: string): JSX.Element {
     for (let i = 0; i < TABS.length; i++) {
-      const tab = TABS[i]
+      const tab = TABS[i];
       if (tab.caption === activeTab) {
         return <div className="services__tab">
-            <div className="services__tab-wrapper">
-              <h2 className="services__tab_title">{tab.title}</h2>
-              <div className="services__tab_checkbox-wrapper">
+            <div className="services__info-block">
+              <h2 className="services__title">{tab.title}</h2>
+              <div className="services__checkboxes">
                 {configChecboxes(tab.checkText)}
               </div>
-              {tab.additionalInfo && <span className="services__tab_additional">{tab.additionalInfo}</span>}
+              {tab.additionalInfo && <span className="services__additional">{tab.additionalInfo}</span>}
               {tab.bttnCaption && <Button caption={tab.bttnCaption} color="dark" size="m" onClick={handleClick}/>}
             </div>
-            <img className="services__tab_img" src={tab.tabImg} alt=""></img>
+            <img className="services__img" src={tab.tabImg} alt=""></img>
           </div>
       }
     }
@@ -88,7 +88,7 @@ const Services: React.FC = () => {
 
   return (
     <div className="services">
-      <div className="services__tabs-container">
+      <div className="services__tabs">
         {setServiceTabs(activeTab)}
       </div>
       {setTab(activeTab)}

@@ -51,7 +51,7 @@ const Carousel: React.FC = () => {
   function changeSlide(slideNumber?: number): void {
     if (slideNumber) {
       clearInterval(slideTimer.current)
-      slideTimer.current = window.setInterval(() => changeSlide(), 6000);
+      slideTimer.current = window.setInterval(() => changeSlide(), 5000);
     }
     const autoChangedSlide = currentSlide === SLIDES.length ? 1 : currentSlide + 1;
     const newSlide = slideNumber || autoChangedSlide;
@@ -59,36 +59,34 @@ const Carousel: React.FC = () => {
   }
 
   const slideArray = SLIDES.map(slide => {
-    return <div className="carousel__slide">
-      <img className="carousel__slide_background" src={slide.background} alt=""></img>
+    return <div className="slide">
+      <img className="slide__background" src={slide.background} alt=""></img>
       {slide.bannerImg === 'cards'
         ? <div>
-            <img className="carousel__slide_black-card" src={blackCard} alt=""></img>
-            <img className="carousel__slide_white-card" src={whiteCard} alt=""></img>
+            <img className="slide__black-card" src={blackCard} alt=""></img>
+            <img className="slide__white-card" src={whiteCard} alt=""></img>
           </div>
-        : <img className="carousel__slide_person" src={slide.bannerImg} alt=""></img>
+        : <img className="slide__person" src={slide.bannerImg} alt=""></img>
       }
-      <div className="carousel__slide_content">
-        <h1 className={`carousel__slide_title ${slide.darkMode ? 'carousel__slide_title-dark' : ''}`}>{slide.title}</h1>
-        <p className={`carousel__slide_description  ${slide.darkMode ? 'carousel__slide_description-dark' : ''}`}>{slide.description}</p>
+      <div className="slide__content">
+        <h1 className={`slide__title ${slide.darkMode ? 'slide__title_dark' : ''}`}>{slide.title}</h1>
+        <p className={`slide__description  ${slide.darkMode ? 'slide__description_dark' : ''}`}>{slide.description}</p>
         { slide.showFunctionalBttn && <Button caption={slide.caption} color={slide.darkMode ? 'dark' : 'light'} size="m" onClick={ (event) => handleClick(event) }/> }
       </div>
     </div>
   })
 
-  const setBullets = (currentSlide: number): JSX.Element[] => {
-    return SLIDES.map((slide, i) => <span className={`carousel__bullet ${i + 1 === currentSlide ? 'carousel__bullet_active' : ''}`} onClick={() => changeSlide(i + 1)}></span>);
+  const setNavigation = (currentSlide: number): JSX.Element[] => {
+    return SLIDES.map((slide, i) => <span className={`carousel__dot ${i + 1 === currentSlide ? 'carousel__dot_active' : ''}`} onClick={() => changeSlide(i + 1)}></span>);
   }
-
-  // TODO: писать сразу в стили, а не править классы.
 
   return (
     <div className="carousel">
-      <div className={`carousel__slide-container carousel__slide-container_slide${currentSlide}`}>
+      <div className={`carousel__tape carousel__tape_position${currentSlide}`}>
         {slideArray}
       </div>
-      <div className="carousel__bullet-wrapper">
-        {setBullets(currentSlide)}
+      <div className="carousel__navigation">
+        {setNavigation(currentSlide)}
       </div>
     </div>
   );

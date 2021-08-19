@@ -10,7 +10,7 @@ footer p {
   font-size: 12px;
   color: #707C87;
 }
-.footer__wrapper {
+.footer__info-block {
   width: 1170px;
   height: 100%;
   display: flex;
@@ -22,10 +22,10 @@ footer p {
   margin-top: 49px;
   margin-bottom: 1px;
 }
-.footer__logo_img {
+.footer__logo-img {
   height: 25px;
 }
-.footer__logo_label {
+.footer__logo-label {
   margin-left: 8px;
   font-style: normal;
   font-weight: bold;
@@ -48,11 +48,11 @@ footer p {
 .footer__contacts p {
   margin-top: 10px;
 }
-.footer__contacts_phone {
+.footer__phone {
   height: 16px;
   margin-right: 19px;
 }
-.footer__contacts_number {
+.footer__number {
   font-weight: bold;
 }
 .footer__social {

@@ -2,6 +2,9 @@ import React from 'react';
 import './Slider.css';
 import { ISlider } from './ISlider'
 
+const MIN_POSITION = 0;
+const MAX_POSITION = 100;
+
 const Slider: React.FC<ISlider> = (props) => {
 
   const { thumbValue, minValue, maxValue } = props;
@@ -15,17 +18,17 @@ const Slider: React.FC<ISlider> = (props) => {
 
   function setThumbPosition(value: number): number {
     if (value > maxValue) {
-      return 100;
+      return MAX_POSITION;
     } else if (value < minValue) {
-      return 0
+      return MIN_POSITION;
     } else {
-      return (value - minValue) * 100 / (maxValue - minValue);
+      return (value - minValue) * MAX_POSITION / (maxValue - minValue);
     }
   }
 
   return (
     <div className="slider">
-      <div className="slider__container">
+      <div className="slider__range">
         <input
           className="slider__thumb"
           type="range"
@@ -35,14 +38,14 @@ const Slider: React.FC<ISlider> = (props) => {
           step={props.step}
           onChange={sliderChange}
         />
-        <div className="slider__rail_container">
+        <div className="slider__path">
           <div className="slider__rail"></div>
           <div className="slider__track" style={{width: setThumbPosition(thumbValue) + '%'}}></div>
         </div>
       </div>
-      <div className="slider__value_container">
-        {props.sliderLabel && <div className="slider__value">{(props.showRightLabel ? minValue : thumbValue) + props.sliderLabel}</div>}
-        {props.showRightLabel && props.sliderLabel && <div className="slider__value">{maxValue + props.sliderLabel}</div>}
+      <div className="slider__value">
+        {props.sliderLabel && <div>{(props.showRightLabel ? minValue : thumbValue) + props.sliderLabel}</div>}
+        {props.showRightLabel && props.sliderLabel && <div>{maxValue + props.sliderLabel}</div>}
       </div>
     </div>
   );

@@ -12,20 +12,20 @@
 .button:hover {
   cursor: pointer;
 }
-.button__size_m {
+.button_m {
   padding: 20px 30px;
 }
-.button__color_light {
+.button_light {
   background: #F6F7FF;
   color: #1F1E25;
 }
-.button__color_light:hover {
+.button_light:hover {
   background: #E0E1EA;
 }
-.button__color_dark {
+.button_dark {
   background: #2C36F2;
   color: #F6F7FF;
 }
-.button__color_dark:hover {
+.button_dark:hover {
   background: #3e47ee;
 }
