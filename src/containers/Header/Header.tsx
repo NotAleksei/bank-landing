@@ -1,14 +1,27 @@
 import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import './Header.css';
 import logo from '../../img/icon/logo.svg'
 import login from '../../img/icon/login.svg'
 import TabsButton from '../../components/TabsButton/TabsButton';
 
+const TABS = [{
+  caption: 'Услуги',
+  key: uuidv4()
+}, {
+  caption: 'Рассчитать кредит',
+  key: uuidv4()
+}, {
+  caption: 'Конвертер валют',
+  key: uuidv4()
+}, {
+  caption: 'Контакты',
+  key: uuidv4()
+}]
+
 const Header: React.FC = () => {
 
-  const tabsBtnCaptions = ['Услуги', 'Рассчитать кредит', 'Конвертер валют', 'Контакты'];
-
-  const tabsBtn = tabsBtnCaptions.map(caption => <TabsButton caption={ caption }/>)
+  const tabsBtn = TABS.map(tab => <TabsButton key={tab.key} caption={ tab.caption }/>)
 
   return (
     <header className="header">

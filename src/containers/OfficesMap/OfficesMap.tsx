@@ -1,22 +1,34 @@
 import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import './OfficesMap.css';
 import { YMaps, Map, Placemark } from 'react-yandex-maps'
 import location from '../../img/icon/location.svg';
 
-const PIN_COORDINATES = [
-  [55.75,37.61],
-  [51.54,46.03],
-  [55.80,49.1],
-  [57.16,65.54],
-  [55,73.36]
+const PIN_COORDINATES = [{
+    coordinates: [55.75,37.61],
+    key: uuidv4()
+  }, {
+    coordinates: [51.54,46.03],
+    key: uuidv4()
+  }, {
+    coordinates: [55.80,49.1],
+    key: uuidv4()
+  }, {
+    coordinates: [57.16,65.54],
+    key: uuidv4()
+  }, {
+    coordinates: [55,73.36],
+    key: uuidv4()
+  }
 ]
 
 const OfficesMap: React.FC = () => {
 
   function createPlacemarks(): JSX.Element[] {
-    return PIN_COORDINATES.map(coordinates => {
+    return PIN_COORDINATES.map(pin => {
       return <Placemark
-        geometry={coordinates}
+        key={pin.key}
+        geometry={pin.coordinates}
         options={{
           iconLayout: 'default#image',
           iconImageHref: location,

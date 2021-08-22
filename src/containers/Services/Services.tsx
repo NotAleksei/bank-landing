@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+import { ICheckText } from './IServices'
+import './Services.css';
+import ServiceTab from '../../components/ServiceTab/ServiceTab';
+import Button from '../../components/Button/Button';
 import vault from '../../img/icon/vault.svg';
 import cards from '../../img/icon/cards.svg';
 import security from '../../img/icon/security.svg';
@@ -8,38 +13,72 @@ import piggybank from '../../img/upload/services/piggybank.png';
 import car from '../../img/upload/services/car.png';
 import lock from '../../img/upload/services/lock.png';
 import phone from '../../img/upload/services/phone.png';
-import './Services.css';
-import ServiceTab from '../../components/ServiceTab/ServiceTab';
-import Button from '../../components/Button/Button';
 
 const TABS = [{
     caption: 'Вклады',
     logo: vault,
     title: 'Вклады Лига Банка – это выгодная \nинвестиция в свое будущее',
-    checkText: ['Проценты по вкладам до 7%', 'Разнообразные условия', 'Возможность ежемесячной капитализации \nили вывод процентов на банковскую карту'],
+    checkText: [{
+      caption: 'Проценты по вкладам до 7%',
+      key: uuidv4()
+    }, {
+      caption: 'Разнообразные условия',
+      key: uuidv4()
+    }, {
+      caption: 'Возможность ежемесячной капитализации \nили вывод процентов на банковскую карту',
+      key: uuidv4()
+    }],
     bttnCaption: 'Узнать подробнее',
-    tabImg: piggybank
+    tabImg: piggybank,
+    key: uuidv4()
   }, {
     caption: 'Кредиты',
     logo: cards,
     title: 'Лига Банк выдает кредиты \nпод любые цели',
-    checkText: ['Ипотечный кредит', 'Автокредит', 'Потребительский кредит'],
+    checkText: [{
+      caption: 'Ипотечный кредит',
+      key: uuidv4()
+    }, {
+      caption: 'Автокредит',
+      key: uuidv4()
+    }, {
+      caption: 'Потребительский кредит',
+      key: uuidv4()
+    }],
     additionalInfo: 'Рассчитайте ежемесячный платеж \nи ставку по кредиту воспользовавшись \nнашим кредитным калькулятором',
-    tabImg: car
+    tabImg: car,
+    key: uuidv4()
   }, {
     caption: 'Страхование',
     logo: security,
     title: 'Лига Страхование — застрахуем \nвсе что захотите',
-    checkText: ['Автомобильное страхование', 'Страхование жизни и здоровья', 'Страхование недвижимости'],
+    checkText: [{
+      caption: 'Автомобильное страхование',
+      key: uuidv4()
+    }, {
+      caption: 'Страхование жизни и здоровья',
+      key: uuidv4()
+    }, {
+      caption: 'Страхование недвижимости',
+      key: uuidv4()
+    }],
     bttnCaption: 'Узнать подробнее',
-    tabImg: lock
+    tabImg: lock,
+    key: uuidv4()
   }, {
     caption: 'Онлайн-сервисы',
     logo: phoneLogo,
     title: 'Лига Банк — это огромное количество \nонлайн-сервисов для вашего удобства',
-    checkText: ['Мобильный банк, \nкоторый всегда под рукой', 'Приложение Лига-проездной позволит \nвам оплачивать билеты по всему миру'],
+    checkText: [{
+      caption: 'Мобильный банк, \nкоторый всегда под рукой',
+      key: uuidv4()
+    }, {
+      caption: 'Приложение Лига-проездной позволит \nвам оплачивать билеты по всему миру',
+      key: uuidv4()
+    }],
     bttnCaption: 'Узнать подробнее',
-    tabImg: phone
+    tabImg: phone,
+    key: uuidv4()
   }
 ]
 
@@ -53,14 +92,14 @@ const Services: React.FC = () => {
   }
 
   function setServiceTabs(activeTab: string): JSX.Element[] {
-    return TABS.map(tab => <ServiceTab caption={tab.caption} logo={tab.logo} isActive={activeTab === tab.caption} changeTab={(tab) => setActiveTab(tab)}/>);
+    return TABS.map(tab => <ServiceTab key={tab.key} caption={tab.caption} logo={tab.logo} isActive={activeTab === tab.caption} changeTab={(tab) => setActiveTab(tab)}/>);
   }
 
-  function configChecboxes(checkText: string[]): JSX.Element[] {
+  function configChecboxes(checkText: ICheckText[]): JSX.Element[] {
     return checkText.map(text => {
-      return <div className="services__checkbox">
+      return <div key={text.key} className="services__checkbox">
           <img src={checkbox} alt=""></img>
-          <span className="services__checkbox-label">{text}</span>
+          <span className="services__checkbox-label">{text.caption}</span>
         </div>
     })
   }

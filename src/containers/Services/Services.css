@@ -28,6 +28,10 @@
   align-items: baseline;
   padding-top: 25px;
 }
+.services__checkbox > img {
+  width: 13px;
+  height: 10px;
+}
 .services__checkbox-label {
   font-size: 18px;
   margin-left: 10px;

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import './Carousel.css';
 import slide1 from '../../img/upload/carousel/slide_1.png';
 import slide2 from '../../img/upload/carousel/slide_2.png';
@@ -15,13 +16,15 @@ const SLIDES = [{
     description: 'Кредиты на любой случай',
     bannerImg: 'cards',
     showFunctionalBttn: true,
-    caption: 'Рассчитать кредит'
+    caption: 'Рассчитать кредит',
+    key: uuidv4()
   }, {
     background: slide2,
     darkMode: true,
     title: 'Лига Банк',
     description: 'Ваша уверенность в завтрашнем дне',
     bannerImg: petr,
+    key: uuidv4()
   }, {
     background: slide3,
     darkMode: true,
@@ -29,7 +32,8 @@ const SLIDES = [{
     description: 'Всегда рядом',
     bannerImg: alice,
     showFunctionalBttn: true,
-    caption: 'Найти отделение'
+    caption: 'Найти отделение',
+    key: uuidv4()
   }
 ]
 
@@ -39,7 +43,6 @@ const Carousel: React.FC = () => {
   const slideTimer = useRef<number>();
 
   useEffect(() => {
-    //  FIXME: Использую window, для корректного типа useRef.
     slideTimer.current = window.setInterval(() => changeSlide(), 5000);
     return () => clearInterval(slideTimer.current);
   });
@@ -59,7 +62,7 @@ const Carousel: React.FC = () => {
   }
 
   const slideArray = SLIDES.map(slide => {
-    return <div className="slide">
+    return <div key={slide.key} className="slide">
       <img className="slide__background" src={slide.background} alt=""></img>
       {slide.bannerImg === 'cards'
         ? <div>
@@ -77,7 +80,7 @@ const Carousel: React.FC = () => {
   })
 
   const setNavigation = (currentSlide: number): JSX.Element[] => {
-    return SLIDES.map((slide, i) => <span className={`carousel__dot ${i + 1 === currentSlide ? 'carousel__dot_active' : ''}`} onClick={() => changeSlide(i + 1)}></span>);
+    return SLIDES.map((slide, i) => <span key={slide.key} className={`carousel__dot ${i + 1 === currentSlide ? 'carousel__dot_active' : ''}`} onClick={() => changeSlide(i + 1)}></span>);
   }
 
   return (
