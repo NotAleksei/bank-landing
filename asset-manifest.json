@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/bank-landing/static/css/main.13b9be76.chunk.css",
-    "main.js": "/bank-landing/static/js/main.993a6571.chunk.js",
-    "main.js.map": "/bank-landing/static/js/main.993a6571.chunk.js.map",
+    "main.js": "/bank-landing/static/js/main.75b27543.chunk.js",
+    "main.js.map": "/bank-landing/static/js/main.75b27543.chunk.js.map",
     "runtime-main.js": "/bank-landing/static/js/runtime-main.b3cdb5bf.js",
     "runtime-main.js.map": "/bank-landing/static/js/runtime-main.b3cdb5bf.js.map",
-    "static/js/2.8b316981.chunk.js": "/bank-landing/static/js/2.8b316981.chunk.js",
-    "static/js/2.8b316981.chunk.js.map": "/bank-landing/static/js/2.8b316981.chunk.js.map",
+    "static/js/2.5fa6d946.chunk.js": "/bank-landing/static/js/2.5fa6d946.chunk.js",
+    "static/js/2.5fa6d946.chunk.js.map": "/bank-landing/static/js/2.5fa6d946.chunk.js.map",
     "index.html": "/bank-landing/index.html",
     "static/css/main.13b9be76.chunk.css.map": "/bank-landing/static/css/main.13b9be76.chunk.css.map",
-    "static/js/2.8b316981.chunk.js.LICENSE.txt": "/bank-landing/static/js/2.8b316981.chunk.js.LICENSE.txt",
+    "static/js/2.5fa6d946.chunk.js.LICENSE.txt": "/bank-landing/static/js/2.5fa6d946.chunk.js.LICENSE.txt",
     "static/media/alice.6ff36ea8.png": "/bank-landing/static/media/alice.6ff36ea8.png",
     "static/media/arrow_down.4c5bbd21.svg": "/bank-landing/static/media/arrow_down.4c5bbd21.svg",
     "static/media/arrow_up.da84f14a.svg": "/bank-landing/static/media/arrow_up.da84f14a.svg",
@@ -40,8 +40,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b3cdb5bf.js",
-    "static/js/2.8b316981.chunk.js",
+    "static/js/2.5fa6d946.chunk.js",
     "static/css/main.13b9be76.chunk.css",
-    "static/js/main.993a6571.chunk.js"
+    "static/js/main.75b27543.chunk.js"
   ]
 }
