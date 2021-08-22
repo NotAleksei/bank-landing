@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 .input-counter__label {
-  color: #394959;
+  color: var(--color-label);
   font-size: 16px;
   line-height: 14px;
 }
@@ -18,12 +18,9 @@
   box-sizing: border-box;
   margin-top: 15px;
   margin-bottom: 10px;
-  border: 1px solid #1F1E25;
+  border: 1px solid var(--color-dark);
   border-radius: 4px;
   font-size: 18px;
-}
-.input-counter__input-wrapper_invalid {
-  border-color: #ff0000;
 }
 .input-counter input {
   width: 100%;
@@ -48,6 +45,6 @@
 }
 .input-counter__additional {
   font-size: 14px;
-  color: #707C87;
+  color: var(--color-additional);
   line-height: 12px;
 }

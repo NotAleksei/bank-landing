@@ -49,15 +49,15 @@
 .slide__title {
   font-size: 54px;
   margin: 0 0 7px;
-  color: #F6F7FF;
+  color: var(--color-background);
 }
 .slide__title_dark {
-  color: #1F1E25;
+  color: var(--color-dark);
 }
 .slide__description {
   font-size: 22px;
   margin: 0 0 35px;
-  color: #E0E1EA;
+  color: var(--color-shadow);
 }
 .slide__description_dark {
   color: #2B3C4F;

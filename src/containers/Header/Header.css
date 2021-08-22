@@ -6,7 +6,7 @@
   justify-content: space-between;
   padding: 0px 100px;
   box-sizing: border-box;
-  background-color: #F6F7FF;
+  background-color: var(--color-background);
 }
 .header__logo {
   display: flex;
@@ -21,7 +21,7 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 39px;
-  color: #1F1E25;
+  color: var(--color-dark);
 }
 .header__tab-buttons {
   display: flex;

@@ -5,7 +5,7 @@
     box-sizing: border-box;
 
     &__label {
-        color: #394959;
+        color: var(--color-label);
         font-size: 16px;
         line-height: 14px;
     }
@@ -19,13 +19,9 @@
         box-sizing: border-box;
         margin-top: 15px;
         margin-bottom: 10px;
-        border: 1px solid #1F1E25;
+        border: 1px solid var(--color-dark);
         border-radius: 4px;
         font-size: 18px;
-
-        &_invalid {
-            border-color: rgb(255, 0, 0);
-        }
     }
 
     & input {
@@ -55,7 +51,7 @@
 
     &__additional {
         font-size: 14px;
-        color: #707C87;
+        color: var(--color-additional);
         line-height: 12px;
     }
 }

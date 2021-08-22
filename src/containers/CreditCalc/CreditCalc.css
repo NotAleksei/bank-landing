@@ -26,7 +26,7 @@
   justify-content: space-between;
   padding: 60px;
   box-sizing: border-box;
-  background: #F6F7FF;
+  background: var(--color-background);
 }
 .credit-calc__step {
   font-size: 22px;
@@ -41,7 +41,7 @@
   box-sizing: border-box;
 }
 .credit-calc__input-block_border {
-  border: 1px solid #1F1E25;
+  border: 1px solid var(--color-dark);
   border-radius: 4px;
 }
 .credit-calc__selector {
@@ -57,7 +57,7 @@
 }
 .credit-calc__selector_choosen {
   justify-content: space-between;
-  border: 1px solid #1F1E25;
+  border: 1px solid var(--color-dark);
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -86,8 +86,8 @@
   position: absolute;
   top: 60px;
   width: 100%;
-  background-color: #fff;
-  border: 1px solid #1F1E25;
+  background: #fff;
+  border: 1px solid var(--color-dark);
   border-top: none;
   border-radius: 0px 0px 4px 4px;
   box-sizing: border-box;

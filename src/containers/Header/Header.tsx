@@ -1,3 +1,4 @@
+import React from 'react';
 import './Header.css';
 import logo from '../../img/icon/logo.svg'
 import login from '../../img/icon/login.svg'
@@ -20,7 +21,7 @@ const Header: React.FC = () => {
       </div>
       <div className="header__login">
         <img className="header__login-img" src={login} alt=""/>
-        <div className="header__login_label">Войти в интернет банк</div>
+        <div className="header__login-label">Войти в интернет банк</div>
       </div>
     </header>
   );

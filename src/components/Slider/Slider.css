@@ -16,12 +16,12 @@
 .slider__rail {
   width: 100%;
   height: 100%;
-  background-color: #C1C2CA;
+  background: var(--color-unaccent);
 }
 .slider__track {
   width: 50%;
   height: 100%;
-  background-color: #2C36F2;
+  background: var(--color-primary);
   margin-top: -2px;
 }
 .slider__thumb,
@@ -33,7 +33,7 @@
   outline: none;
 }
 .slider__thumb::-webkit-slider-thumb {
-  background-color: #2C36F2;
+  background: var(--color-primary);
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -50,5 +50,5 @@
   margin-top: 8px;
   line-height: 8px;
   font-size: 14px;
-  color: #707C87;
+  color: var(--color-unactive-label);
 }

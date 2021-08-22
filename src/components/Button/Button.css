@@ -16,16 +16,16 @@
   padding: 20px 30px;
 }
 .button_light {
-  background: #F6F7FF;
-  color: #1F1E25;
+  background: var(--color-background);
+  color: var(--color-dark);
 }
 .button_light:hover {
-  background: #E0E1EA;
+  background: var(--color-shadow);
 }
 .button_dark {
-  background: #2C36F2;
-  color: #F6F7FF;
+  background: var(--color-primary);
+  color: var(--color-background);
 }
 .button_dark:hover {
-  background: #3e47ee;
+  background: var(--color-primary-light);
 }
