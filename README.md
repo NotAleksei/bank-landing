@@ -20,6 +20,6 @@ https://notaleksei.github.io/bank-landing/
 
 ## Commands:
 
-`npm start` Runs dev-server (http://localhost:8080 by default)
+`npm start` Runs the app (http://localhost:3000/ by default)
 
 `npm run build` Builds project
