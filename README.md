@@ -14,7 +14,7 @@ https://notaleksei.github.io/bank-landing/
 
 ## You can:
 
-* Change slides at carousel
+* Change slides in carousel
 * Change tabs in services block
 * Calculate loan
 
