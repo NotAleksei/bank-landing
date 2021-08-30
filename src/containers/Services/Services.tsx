@@ -4,15 +4,15 @@ import { ICheckText } from './IServices'
 import './Services.css';
 import ServiceTab from '../../components/ServiceTab/ServiceTab';
 import Button from '../../components/Button/Button';
-import vault from '../../img/icon/vault.svg';
-import cards from '../../img/icon/cards.svg';
-import security from '../../img/icon/security.svg';
-import phoneLogo from '../../img/icon/phone.svg';
-import checkbox from '../../img/icon/checkbox.svg';
-import piggybank from '../../img/upload/services/piggybank.png';
-import car from '../../img/upload/services/car.png';
-import lock from '../../img/upload/services/lock.png';
-import phone from '../../img/upload/services/phone.png';
+import vault from '@icon/vault.svg';
+import cards from '@icon/cards.svg';
+import security from '@icon/security.svg';
+import phoneLogo from '@icon/phone.svg';
+import checkbox from '@icon/checkbox.svg';
+import piggybank from '@upload/services/piggybank.png';
+import car from '@upload/services/car.png';
+import lock from '@upload/services/lock.png';
+import phone from '@upload/services/phone.png';
 
 const TABS = [{
     caption: 'Вклады',

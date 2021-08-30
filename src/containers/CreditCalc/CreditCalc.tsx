@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import InputCounter from '../../components/InputCounter/InputCounter';
-import arrowDown from '../../img/icon/arrow_down.svg';
-import arrowUp from '../../img/icon/arrow_up.svg';
+import arrowDown from '@icon/arrow_down.svg';
+import arrowUp from '@icon/arrow_up.svg';
 import './CreditCalc.css';
 import Slider from '../../components/Slider/Slider';
 import Button from '../../components/Button/Button';

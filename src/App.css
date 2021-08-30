@@ -9,3 +9,7 @@
   --color-unactive-label: #4C4B51;
   --color-unaccent: #C1C2CA;
 }
+.main-page {
+  display: flex;
+  flex-direction: column;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import './OfficesMap.css';
 import { YMaps, Map, Placemark } from 'react-yandex-maps'
-import location from '../../img/icon/location.svg';
+import location from '@icon/location.svg';
 
 const PIN_COORDINATES = [{
     coordinates: [55.75,37.61],

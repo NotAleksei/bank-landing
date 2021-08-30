@@ -1,12 +1,12 @@
 import React from 'react'
 import './Footer.css';
-import logo from '../../img/icon/logo.svg'
-import phone from '../../img/icon/s_phone.svg'
-import handset from '../../img/icon/handset.svg'
-import facebook from '../../img/icon/facebook.svg'
-import instagram from '../../img/icon/instagram.svg'
-import twitter from '../../img/icon/twitter.svg'
-import youtube from '../../img/icon/youtube.svg'
+import logo from '@icon/logo.svg'
+import phone from '@icon/s_phone.svg'
+import handset from '@icon/handset.svg'
+import facebook from '@icon/facebook.svg'
+import instagram from '@icon/instagram.svg'
+import twitter from '@icon/twitter.svg'
+import youtube from '@icon/youtube.svg'
 
 const Footer: React.FC = () => {
   return (

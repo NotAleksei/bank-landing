@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import './Carousel.css';
-import slide1 from '../../img/upload/carousel/slide_1.png';
-import slide2 from '../../img/upload/carousel/slide_2.png';
-import slide3 from '../../img/upload/carousel/slide_3.png';
-import blackCard from '../../img/upload/carousel/blackСard.png';
-import whiteCard from '../../img/upload/carousel/whiteCard.png';
-import petr from '../../img/upload/carousel/petr.png';
-import alice from '../../img/upload/carousel/alice.png';
+import slide1 from '@upload/carousel/slide_1.png';
+import slide2 from '@upload/carousel/slide_2.png';
+import slide3 from '@upload/carousel/slide_3.png';
+import blackCard from '@upload/carousel/blackСard.png';
+import whiteCard from '@upload/carousel/whiteCard.png';
+import petr from '@upload/carousel/petr.png';
+import alice from '@upload/carousel/alice.png';
 import Button from '../../components/Button/Button';
 
 const SLIDES = [{

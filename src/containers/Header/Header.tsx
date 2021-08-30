@@ -1,8 +1,8 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import './Header.css';
-import logo from '../../img/icon/logo.svg'
-import login from '../../img/icon/login.svg'
+import logo from '@icon/logo.svg'
+import login from '@icon/login.svg'
 import TabsButton from '../../components/TabsButton/TabsButton';
 
 const TABS = [{

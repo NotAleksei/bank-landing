@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import plus from '../../img/icon/plus.svg';
-import minus from '../../img/icon/minus.svg';
+import plus from '@icon/plus.svg';
+import minus from '@icon/minus.svg';
 import './InputCounter.css';
 import { IInputCounter } from './IInputCounter'
 
