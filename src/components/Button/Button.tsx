@@ -4,9 +4,11 @@ import { IButton } from './IButton'
 
 const Button: React.FC<IButton> = (props) => {
 
+  const { color, size, caption, onClick } = props;
+
   return (
-    <a className={`button button_${props.color} button_${props.size}`} href="#" onClick={props.onClick}>
-      <span>{props.caption}</span>
+    <a className={`button button_${color} button_${size}`} href="#" onClick={onClick}>
+      <span>{caption}</span>
     </a>
   );
 }

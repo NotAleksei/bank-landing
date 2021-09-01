@@ -43,7 +43,7 @@ const Carousel: React.FC = () => {
   const slideTimer = useRef<number>();
 
   useEffect(() => {
-    slideTimer.current = window.setInterval(() => changeSlide(), 5000);
+    slideTimer.current = window.setInterval(() => changeSlide(), 3000);
     return () => clearInterval(slideTimer.current);
   });
 

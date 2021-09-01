@@ -4,9 +4,11 @@ import { ITabsButton } from './ITabsButton'
 
 const TabsButton: React.FC<ITabsButton> = (props) => {
 
+  const {caption} = props;
+
   return (
     <div className="tabs-button">
-      {props.caption}
+      {caption}
     </div>
   );
 }

@@ -6,7 +6,16 @@ import { IInputCounter } from './IInputCounter'
 
 const InputCounter: React.FC<IInputCounter> = (props) => {
 
-  const { inputValue, onValueChanged } = props;
+  const {
+    inputValue,
+    onValueChanged,
+    step,
+    minValue,
+    maxValue,
+    label,
+    isShowChangeButtons,
+    additionalText
+  } = props;
   const [currentInputValue, setCurrentInputValue] = useState(inputValue);
 
   useEffect(() => {
@@ -15,10 +24,10 @@ const InputCounter: React.FC<IInputCounter> = (props) => {
 
   function changeBttnHandler(type?: string): void {
     const value = type === 'increase'
-      ? +currentInputValue + props.step
-      : +currentInputValue - props.step;
+      ? +currentInputValue + step
+      : +currentInputValue - step;
 
-      if ((props.minValue && value < props.minValue) || (props.maxValue && value > props.maxValue)) {
+      if ((minValue && value < minValue) || (maxValue && value > maxValue)) {
         return;
       }
       setCurrentInputValue(value);
@@ -35,7 +44,7 @@ const InputCounter: React.FC<IInputCounter> = (props) => {
 
   function inputValueChanged(ev: React.ChangeEvent<HTMLInputElement>): void {
     // Проверка на допустимые максимальные и минимальные значения
-    if ((props.minValue && currentInputValue < props.minValue) || (props.maxValue && currentInputValue > props.maxValue)) {
+    if ((minValue && currentInputValue < minValue) || (maxValue && currentInputValue > maxValue)) {
       // Запишем предыдущее значение инпута в стейт
       setCurrentInputValue(inputValue);
       return;
@@ -45,9 +54,9 @@ const InputCounter: React.FC<IInputCounter> = (props) => {
 
   return (
     <div className="input-counter">
-      <span className="input-counter__label">{props.label}</span>
+      <span className="input-counter__label">{label}</span>
       <div className="input-counter__input-wrapper">
-        {props.isShowChangeButtons && 
+        {isShowChangeButtons && 
           <div className="input-counter__change-btn" onClick={() => changeBttnHandler()}>
             <img src={minus} alt=""/>
           </div>
@@ -58,13 +67,13 @@ const InputCounter: React.FC<IInputCounter> = (props) => {
           onChange={changeInputValue}
           onBlur={inputValueChanged}
         />
-        {props.isShowChangeButtons && 
+        {isShowChangeButtons && 
           <div className="input-counter__change-btn" onClick={() => changeBttnHandler('increase')}>
             <img src={plus} alt=""/>
           </div>
         }
       </div>
-      {props.additionalText && <span className="input-counter__additional">{props.additionalText}</span>}
+      {additionalText && <span className="input-counter__additional">{additionalText}</span>}
     </div>
   );
 }

@@ -7,13 +7,21 @@ const MAX_POSITION = 100;
 
 const Slider: React.FC<ISlider> = (props) => {
 
-  const { thumbValue, minValue, maxValue } = props;
+  const {
+    thumbValue,
+    minValue,
+    maxValue,
+    step,
+    showRightLabel,
+    sliderLabel,
+    onSliderChanged
+  } = props;
 
   function sliderChange(ev: React.ChangeEvent<HTMLInputElement>): void {
     const value = +ev.target.value;
 
     // Передаем текущее значение слайдера
-    props.onSliderChanged(value);
+    onSliderChanged(value);
   }
 
   function setThumbPosition(value: number): number {
@@ -35,7 +43,7 @@ const Slider: React.FC<ISlider> = (props) => {
           min={minValue}
           max={maxValue}
           value={thumbValue}
-          step={props.step}
+          step={step}
           onChange={sliderChange}
         />
         <div className="slider__path">
@@ -44,8 +52,8 @@ const Slider: React.FC<ISlider> = (props) => {
         </div>
       </div>
       <div className="slider__value">
-        {props.sliderLabel && <div>{(props.showRightLabel ? minValue : thumbValue) + props.sliderLabel}</div>}
-        {props.showRightLabel && props.sliderLabel && <div>{maxValue + props.sliderLabel}</div>}
+        {sliderLabel && <div>{(showRightLabel ? minValue : thumbValue) + sliderLabel}</div>}
+        {showRightLabel && sliderLabel && <div>{maxValue + sliderLabel}</div>}
       </div>
     </div>
   );
